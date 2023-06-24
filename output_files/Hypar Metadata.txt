@@ -1,0 +1,384 @@
+HDF5 Hypar0DegStruct_WTestValues.h5 
+Group '/' 
+    Group '/ModelData' 
+        Group '/ModelData/Conditions' 
+            Group '/ModelData/Conditions/PointLoadCondition3D1N' 
+                Attributes:
+                    'Name':  80 111 105 110 116 76 111 97 100 67 111 110 100 105 116 105 111 110 51 68 49 78 
+                    'WorkingSpaceDimension':  3
+                    'NumberOfNodes':  1
+                    'Size':  2945
+                Dataset 'Connectivities' 
+                    Size:  1x2945
+                    MaxSize:  1x2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                Dataset 'Ids' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                Dataset 'PropertiesIds' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+        Group '/ModelData/Elements' 
+            Group '/ModelData/Elements/CableElement3D2N' 
+                Attributes:
+                    'Name':  67 97 98 108 101 69 108 101 109 101 110 116 51 68 50 78 
+                    'WorkingSpaceDimension':  3
+                    'NumberOfNodes':  2
+                    'Size':  260
+                Dataset 'Connectivities' 
+                    Size:  2x260
+                    MaxSize:  2x260
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                Dataset 'Ids' 
+                    Size:  260
+                    MaxSize:  260
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                Dataset 'PropertiesIds' 
+                    Size:  260
+                    MaxSize:  260
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+            Group '/ModelData/Elements/MembraneElement3D3N' 
+                Attributes:
+                    'Name':  77 101 109 98 114 97 110 101 69 108 101 109 101 110 116 51 68 51 78 
+                    'WorkingSpaceDimension':  3
+                    'NumberOfNodes':  3
+                    'Size':  5628
+                Dataset 'Connectivities' 
+                    Size:  3x5628
+                    MaxSize:  3x5628
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                Dataset 'Ids' 
+                    Size:  5628
+                    MaxSize:  5628
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                Dataset 'PropertiesIds' 
+                    Size:  5628
+                    MaxSize:  5628
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+        Group '/ModelData/NodalSolutionStep' 
+            Attributes:
+                'BufferSize':  1
+            Group '/ModelData/NodalSolutionStep/VariablesList' 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        Group '/ModelData/Nodes' 
+            Group '/ModelData/Nodes/Local' 
+                Attributes:
+                    'Size':  2945
+                Dataset 'Coordinates' 
+                    Size:  3x2945
+                    MaxSize:  3x2945
+                    Datatype:   H5T_IEEE_F64LE (double)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0.000000
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                Dataset 'Ids' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+        Group '/ModelData/ProcessInfo' 
+            Group '/ModelData/ProcessInfo/DataValues' 
+        Group '/ModelData/Properties' 
+            Attributes:
+                'Ids':  0 
+            Group '/ModelData/Properties/(0)' 
+                Group '/ModelData/Properties/(0)/DataValues' 
+        Group '/ModelData/SubModelParts' 
+            Group '/ModelData/SubModelParts/DISPLACEMENT_Fixity' 
+                Dataset 'NodeIds' 
+                    Size:  4
+                    MaxSize:  4
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  4
+            Group '/ModelData/SubModelParts/Parts_Cable_Cable' 
+                Dataset 'NodeIds' 
+                    Size:  260
+                    MaxSize:  260
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  260
+                Group '/ModelData/SubModelParts/Parts_Cable_Cable/Elements' 
+                    Group '/ModelData/SubModelParts/Parts_Cable_Cable/Elements/CableElement3D2N' 
+                        Attributes:
+                            'Name':  67 97 98 108 101 69 108 101 109 101 110 116 51 68 50 78 
+                            'WorkingSpaceDimension':  3
+                            'NumberOfNodes':  2
+                            'Size':  260
+                        Dataset 'Connectivities' 
+                            Size:  2x260
+                            MaxSize:  2x260
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'Ids' 
+                            Size:  260
+                            MaxSize:  260
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'PropertiesIds' 
+                            Size:  260
+                            MaxSize:  260
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+            Group '/ModelData/SubModelParts/Parts_Membrane_Membrane' 
+                Dataset 'NodeIds' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  2945
+                Group '/ModelData/SubModelParts/Parts_Membrane_Membrane/Elements' 
+                    Group '/ModelData/SubModelParts/Parts_Membrane_Membrane/Elements/MembraneElement3D3N' 
+                        Attributes:
+                            'Size':  5628
+                            'Name':  77 101 109 98 114 97 110 101 69 108 101 109 101 110 116 51 68 51 78 
+                            'WorkingSpaceDimension':  3
+                            'NumberOfNodes':  3
+                        Dataset 'Connectivities' 
+                            Size:  3x5628
+                            MaxSize:  3x5628
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'Ids' 
+                            Size:  5628
+                            MaxSize:  5628
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'PropertiesIds' 
+                            Size:  5628
+                            MaxSize:  5628
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+            Group '/ModelData/SubModelParts/PointLoad3D_Membrane' 
+                Dataset 'NodeIds' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  2945
+                Group '/ModelData/SubModelParts/PointLoad3D_Membrane/Conditions' 
+                    Group '/ModelData/SubModelParts/PointLoad3D_Membrane/Conditions/PointLoadCondition3D1N' 
+                        Attributes:
+                            'Name':  80 111 105 110 116 76 111 97 100 67 111 110 100 105 116 105 111 110 51 68 49 78 
+                            'WorkingSpaceDimension':  3
+                            'NumberOfNodes':  1
+                            'Size':  2945
+                        Dataset 'Connectivities' 
+                            Size:  1x2945
+                            MaxSize:  1x2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'Ids' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'PropertiesIds' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+            Group '/ModelData/SubModelParts/SelfWeight3D_Cable' 
+                Dataset 'NodeIds' 
+                    Size:  260
+                    MaxSize:  260
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  260
+            Group '/ModelData/SubModelParts/SelfWeight3D_Membrane' 
+                Dataset 'NodeIds' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  2945
+                Group '/ModelData/SubModelParts/SelfWeight3D_Membrane/Conditions' 
+                    Group '/ModelData/SubModelParts/SelfWeight3D_Membrane/Conditions/PointLoadCondition3D1N' 
+                        Attributes:
+                            'Name':  80 111 105 110 116 76 111 97 100 67 111 110 100 105 116 105 111 110 51 68 49 78 
+                            'WorkingSpaceDimension':  3
+                            'NumberOfNodes':  1
+                            'Size':  2945
+                        Dataset 'Connectivities' 
+                            Size:  1x2945
+                            MaxSize:  1x2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'Ids' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'PropertiesIds' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+            Group '/ModelData/SubModelParts/SurfaceLoad3D_Membrane' 
+                Dataset 'NodeIds' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  2945
+                Group '/ModelData/SubModelParts/SurfaceLoad3D_Membrane/Conditions' 
+                    Group '/ModelData/SubModelParts/SurfaceLoad3D_Membrane/Conditions/PointLoadCondition3D1N' 
+                        Attributes:
+                            'Name':  80 111 105 110 116 76 111 97 100 67 111 110 100 105 116 105 111 110 51 68 49 78 
+                            'WorkingSpaceDimension':  3
+                            'NumberOfNodes':  1
+                            'Size':  2945
+                        Dataset 'Connectivities' 
+                            Size:  1x2945
+                            MaxSize:  1x2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'Ids' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'PropertiesIds' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+            Group '/ModelData/SubModelParts/SurfacePressure3D_Membrane' 
+                Dataset 'NodeIds' 
+                    Size:  2945
+                    MaxSize:  2945
+                    Datatype:   H5T_STD_I32LE (int32)
+                    ChunkSize:  []
+                    Filters:  none
+                    FillValue:  0
+                    Attributes:
+                        'Size':  2945
+                Group '/ModelData/SubModelParts/SurfacePressure3D_Membrane/Conditions' 
+                    Group '/ModelData/SubModelParts/SurfacePressure3D_Membrane/Conditions/PointLoadCondition3D1N' 
+                        Attributes:
+                            'Name':  80 111 105 110 116 76 111 97 100 67 111 110 100 105 116 105 111 110 51 68 49 78 
+                            'WorkingSpaceDimension':  3
+                            'NumberOfNodes':  1
+                            'Size':  2945
+                        Dataset 'Connectivities' 
+                            Size:  1x2945
+                            MaxSize:  1x2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'Ids' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+                        Dataset 'PropertiesIds' 
+                            Size:  2945
+                            MaxSize:  2945
+                            Datatype:   H5T_STD_I32LE (int32)
+                            ChunkSize:  []
+                            Filters:  none
+                            FillValue:  0
+    Group '/ResultsData' 
+        Dataset 'NodalDataValues_partition' 
+            Size:  2
+            MaxSize:  2
+            Datatype:   H5T_STD_I32LE (int32)
+            ChunkSize:  []
+            Filters:  none
+            FillValue:  0
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        Group '/ResultsData/NodalDataValues' 
+            Dataset 'AUX_INDEX' 
+                Size:  2945
+                MaxSize:  2945
+                Datatype:   H5T_IEEE_F64LE (double)
+                ChunkSize:  []
+                Filters:  none
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                FillValue:  0.000000
