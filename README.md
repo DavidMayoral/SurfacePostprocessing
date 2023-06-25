@@ -25,7 +25,7 @@ From the top view, it became evident that the data are not evenly distributed ov
 #### 3D-Surface plot
 The interpolated data (See `2. Data postprocessing`) can now be used to generate a regular grid with the function 'meshgrid()'. 
 
-First, the grid is created between the minimum and maximum limits of the available X and Y geometry values. Then, values of the interpolated function can be obtained for every point in the XY-meshgrid `Z = F(X,Y)`.
+First, the grid is created between the minimum and maximum limits of the available X and Y geometry values. Then, values of the interpolated function can be obtained for every point in the XY-meshgrid: `Z = F(X,Y)`.
 
 Now, the 'surf()' function can be called with the available parameters.
 
