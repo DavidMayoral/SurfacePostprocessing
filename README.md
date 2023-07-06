@@ -27,9 +27,27 @@ The interpolated geometry (Z dimension) and pressure data (See `2. Data postproc
 
 First, the grid is created between the minimum and maximum limits of the available X and Y geometry values with help of the function `np.meshgrid()`. Then, values of the interpolated function can be obtained for every point in the XY-meshgrid: `Z = F(X,Y)`, or `pressure = P(X,Y)`, where F and P are the respective interpolating functions.
 
+![Surface_plot arch](Plots/Figure_1(arch).png)
+
 
 ## 4. Plotting values on the surface
 #### Pressure data over the 3D-Surface plot
 Once the 3D-Surface is created with the geometry data, the measured pressure data can be incorporated in the form of colours over the surface. Once the pressure field has been interpolated and a regular mesh has been created with it, it can be added as an additional parameter in the `plot_surface()` function.
 
 ![Surface_pressure ridgevalley](Plots/Figure_2(ridgevalley).png)
+
+Note that, at this point, the Ackley function is being used to replicate the pressure data.
+
+#### Isolines over the 3D-Surface plot
+Apart from the possibility to represent data with colours, isolines can also be helpful. Matplotlib offers the `plt.contour()` function for this:
+
+The parameters are still to be adjusted in order to obtain the desired result.
+
+
+## 5. 2D-Plot
+#### Geometry contour lines
+As a starting point, a flat 2D projection has been created with purely geometric data. Contour lines have been used as in a topographic map.
+
+![Geometry_isolines hypar](Plots/Figure_4.png)
+
+The number of isolines can be manually increased or reduced. The most convenient function in this case is `plt.tricontour()`
