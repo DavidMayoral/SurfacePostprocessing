@@ -31,3 +31,5 @@ First, the grid is created between the minimum and maximum limits of the availab
 ## 4. Plotting values on the surface
 #### Pressure data over the 3D-Surface plot
 Once the 3D-Surface is created with the geometry data, the measured pressure data can be incorporated in the form of colours over the surface. Once the pressure field has been interpolated and a regular mesh has been created with it, it can be added as an additional parameter in the `plot_surface()` function.
+
+![Surface_pressure ridgevalley](Plots/Figure_2(ridgevalley).png)
