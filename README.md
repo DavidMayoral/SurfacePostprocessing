@@ -34,7 +34,6 @@ First, the grid is created between the minimum and maximum limits of the availab
 #### Pressure data over the 3D-Surface plot
 Once the 3D-Surface is created with the geometry data, the measured pressure data can be incorporated in the form of colours over the surface. Once the pressure field has been interpolated and a regular mesh has been created with it, it can be added as an additional parameter in the `plot_surface()` function.
 
-![Surface_pressure ridgevalley](Plots/Figure_2(ridgevalley).png)
 
 Note that, at this point, the Ackley function is being used to replicate the pressure data.
 
@@ -44,10 +43,29 @@ Apart from the possibility to represent data with colours, isolines can also be 
 The parameters are still to be adjusted in order to obtain the desired result.
 
 
-## 5. 2D-Plot
-#### Geometry contour lines
+## 5. 2D-Plot (simple projection)
+Plots have been generated with both geometry and pressure data independently.
+
+#### Contour lines
 As a starting point, a flat 2D projection has been created with purely geometric data. Contour lines have been used as in a topographic map.
 
-![Geometry_isolines hypar](Plots/Figure_4.png)
+![Geometry_isolines hypar](Plots/13-07/Figure_4.png)
 
-The number of isolines can be manually increased or reduced. The most convenient function in this case is `plt.tricontour()`
+When plotting pressure data, the result is the following:
+
+![Pressure_isolines](Plots/13-07/Figure_7.png)
+
+The number of isolines can be manually increased or reduced. The most convenient function in this case is `plt.contour()`. The triangulation function `plt.tricontour()` can also be used, but the plot is not as clean as before.
+
+#### Colormap
+
+![Colormap hypar](Plots/13-07/Figure_8.png)
+
+#### Colormap + contour lines
+
+![Colormap_contour hypar](Plots/13-07/Figure_9.png)
+
+#### Combined plots
+Pressure and geometry can be plotted simultaneously if needed, using a colormap and contour lines over it.
+
+![Combined_plot hypar](Plots/13-07/Figure_10.png)
