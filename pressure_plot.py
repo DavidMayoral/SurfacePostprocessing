@@ -195,4 +195,37 @@ plt.imshow(Z, extent=[x_min,x_max,y_min,y_max], origin='lower', cmap='RdGy_r', a
 cbar11 = plt.colorbar()
 cbar11.set_label('z')
 
+
+# Plot 12: Pressure zoning (a)
+fig12, ax12 = plt.subplots()
+plt.title('Pressure zoning')
+
+pressure_contour4 = plt.contourf(X,Y,pressure, levels=6, cmap='coolwarm')
+cbar12 = plt.colorbar()
+cbar12.set_label('Pressure')
+
+
+# Plot 13: Pressure zoning (b)
+fig12, ax12 = plt.subplots()
+plt.title('Pressure zoning')
+
+pressure_contour5 = ax12.contourf(X,Y,pressure, levels=6, cmap='coolwarm')   # alternative: levels=[0,2,4,6,8,10,12]
+ax12.contour(X,Y,pressure, levels=pressure_contour5.levels, linewidths=1.5, colors='k')
+
+cbar13 = fig12.colorbar(pressure_contour5)
+cbar13.set_label('Pressure')
+
+# Plot 14: Comined 2D geometry & pressure plot (discrete zoning)
+fig14, ax14 = plt.subplots()
+plt.title('')
+
+geom_contour4 = plt.contour(X,Y,Z, 20, colors='black', linewidths=1.25)
+plt.clabel(geom_contour4, inline=True, fontsize=5)
+
+pressure_contour6 = ax14.contourf(X,Y,pressure, levels=6, cmap='coolwarm')
+cbar10 = plt.colorbar(pressure_contour6)
+cbar10.set_label('Pressure')
+
+
+
 plt.show()
