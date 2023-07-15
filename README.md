@@ -17,8 +17,8 @@ Scipy offers a wide range of different interpolators, not only for one-dimension
 #### 3D-Scatterplot
 The first, simplest approach was to perform a scatterplot of the geometry with the available data in the .h5 files, so that the correctness and quality of the data could be checked.
 
-![Cone_scatterplot](Plots/Scatterplot_cone.png)
-![Cone_scatterplot top_view)](Plots/Scatterplot_cone2.png)
+![Cone_scatterplot](Plots/07-07/Scatterplot_cone.png)
+![Cone_scatterplot top_view)](Plots/07-07/Scatterplot_cone2.png)
 
 From the top view, it became evident that the data are not evenly distributed over the space. This has motivated the previously explained interpolation.
 
@@ -27,7 +27,7 @@ The interpolated geometry (Z dimension) and pressure data (See `2. Data postproc
 
 First, the grid is created between the minimum and maximum limits of the available X and Y geometry values with help of the function `np.meshgrid()`. Then, values of the interpolated function can be obtained for every point in the XY-meshgrid: `Z = F(X,Y)`, or `pressure = P(X,Y)`, where F and P are the respective interpolating functions.
 
-![Surface_plot arch](Plots/Figure_1(arch).png)
+![Surface_plot arch](Plots/07-07/Figure_1(arch).png)
 
 
 ## 4. Plotting values on the surface
