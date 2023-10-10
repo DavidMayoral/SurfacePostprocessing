@@ -69,3 +69,21 @@ The number of isolines can be manually increased or reduced. The most convenient
 Pressure and geometry can be plotted simultaneously if needed, using a colormap and contour lines over it.
 
 ![Combined_plot hypar](Plots/13-07/Figure_10.png)
+
+
+## Limitations & Further work
+
+#### Projection
+
+The tridimensional membrane structures are currently being represented on the flat plots through ordinary orthogonal projection. This only provides acceptable results for surfaces with low gradients. 
+
+That is to say, structures like the hypar can be visualized without much distortion, but a more robust approach is needed for other surfaces like the cone if a flat plot is desired.
+
+Based on literature research on the topic, three possible approaches are proposed for this:
+
+- **Projection on a cylinder or sphere**
+
+- **"Relaxation in the plane"**
+
+- **"Cutting Pattern Generation"**
+Although interesting, this approach is surface-specific and a general method would be harder to implement.
