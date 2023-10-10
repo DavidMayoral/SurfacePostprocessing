@@ -85,5 +85,6 @@ Based on literature research on the topic, three possible approaches are propose
 
 - **"Relaxation in the plane"**
 
-- **"Cutting Pattern Generation"**
+- **"Cutting Pattern Generation"**\n
+The Carat ++ library contains two modules which perform this procedure: `AnalysisCuttingPattern.cpp` and `Analysis_CutPart_VaReS.cpp`.\n
 Although interesting, this approach is surface-specific and a general method would be harder to implement.
