@@ -73,19 +73,31 @@ Pressure and geometry can be plotted simultaneously if needed, using a colormap 
 
 ## Limitations & Further work
 
-#### Projection
-
 The tridimensional membrane structures are currently being represented on the flat plots through ordinary orthogonal projection. This only provides acceptable results for surfaces with low gradients. 
 
 That is to say, structures like the hypar can be visualized without much distortion, but a more robust approach is needed for other surfaces like the cone if a flat plot is desired.
 
-Based on literature research on the topic, three possible approaches are proposed for this:
+Several techniques are available to allow a 2D representation of a membrane structure. Based on literature research on the topic, the following approaches are proposed for this. Special attention has been paid to the Carat++ research code, developed by the Chair of Statik at the TU Munich.
 
-- **Projection on a cylinder or sphere**
+- **Projection on a cylinder or sphere.**
 
-- **"Relaxation in the plane"**
+- **Relaxation in the plane.**
+This technique is based on the fact that membrane structures are typically pre-stressed in order to achieve structural stiffness and stability.
+This involves applying tension to the membrane material, such as fabric or other flexible materials, before it is installed in the structure.
+Combined with a biaxial curvature, efficient structures in terms of load distribution can be achieved.
 
-- **"Cutting Pattern Generation"**
-
-The Carat ++ library contains two modules which perform this procedure: `AnalysisCuttingPattern.cpp` and `Analysis_CutPart_VaReS.cpp`.
+- **"Cutting Pattern Generation".**
+It consists of cutting the membrane structure into different parts in an optimized manner, such that they can be developed more easily into a flat surface.
+Unlike the methods presented above, this technique has already been implemented in the Carat++ repository, which contains two modules which perform this procedure: `AnalysisCuttingPattern.cpp` and `Analysis_CutPart_VaReS.cpp`.
 Although interesting, this approach is surface-specific and a general method would be harder to implement.
+
+![Cutting Pattern Generation]()
+
+#### References
+
+More detailed research and insights can be found in the following dissertations:
+
+- "Numerisch-mechanische Betrachtung des Entwurfsprozesses von Membrantragwerken" (Johannes Linhard)
+- "Numerical Methods for the Design and Analysis of Tensile Structures" (Falko H. Dieringer)
+- "Variation of Reference Strategy Generation of Optimized Cutting Patterns for Textile Fabrics" (Armin M. Widhammer)
+ 
