@@ -91,7 +91,7 @@ It consists of cutting the membrane structure into different parts in an optimiz
 Unlike the methods presented above, this technique has already been implemented in the Carat++ repository, which contains two modules which perform this procedure: `AnalysisCuttingPattern.cpp` and `Analysis_CutPart_VaReS.cpp`.
 Although interesting, this approach is surface-specific and a general method would be harder to implement.
 
-![Cutting Pattern Generation]()
+![Cutting Pattern Generation](CuttingPatternGeneration.png)
 
 #### References
 
