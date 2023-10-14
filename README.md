@@ -77,7 +77,7 @@ The tridimensional membrane structures are currently being represented on the fl
 
 That is to say, structures like the hypar can be visualized without much distortion, but a more robust approach is needed for other surfaces like the cone if a flat plot is desired.
 
-Several techniques are available to allow a 2D representation of a membrane structure. Based on literature research on the topic, the following approaches are proposed for this. Special attention has been paid to the Carat++ research code, developed by the Chair of Statik at the TU Munich.
+Several techniques are available to allow a 2D representation of a membrane structure. Based on literature research on the topic, the following approaches are proposed for this. Special attention has been paid to the work done in the Carat++ research code, developed by the Chair of Statik at the TU Munich.
 
 - **Projection on a cylinder or sphere.**
 
@@ -91,7 +91,7 @@ It consists of cutting the membrane structure into different parts in an optimiz
 Unlike the methods presented above, this technique has already been implemented in the Carat++ repository, which contains two modules which perform this procedure: `AnalysisCuttingPattern.cpp` and `Analysis_CutPart_VaReS.cpp`.
 Although interesting, this approach is surface-specific and a general method would be harder to implement.
 
-![Cutting Pattern Generation](CuttingPatternGeneration3.png)
+![Cutting Pattern Generation](CuttingPatternGeneration3.jpg)
 
 ![Cutting Pattern Generation](CuttingPatternGeneration.png)
 
