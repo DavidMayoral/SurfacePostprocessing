@@ -4,7 +4,7 @@ Aiming to present pressure and displacement measurements on irregular surfaces.
 ## 1. Generating the files
 /`run_generate_output.py`/
 
-The data to be used for plotting are generated and stored in Hierarchical Data Format (HDF5), which are optimize to contain large amounts of data.
+The data to be used for plotting are generated and stored in Hierarchical Data Format (HDF5), optimized to contain large amounts of data.
 
 For the moment, the test [Ackley function](https://en.wikipedia.org/wiki/Test_functions_for_optimization) is used to replicate the pressure values.
 
