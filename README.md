@@ -93,6 +93,10 @@ Combined with a biaxial curvature, efficient structures in terms of load distrib
 
 Following this reasoning, Dynamic Relaxation (DR) is an explicit iterative method for obtaining the steady state solution. Because of its explicit nature there is no need for solving large systems of equations. All quantities can be treated as vectors, reducing the implementation complexity and the memory requirements. Although the number of iterations to obtain convergence may be quite large, the computation cost for each iteration is very low, making it a very efficient solution method.
 
+Diereinger provides a more technical description: "The stabilization of the problem is achieved by applying [...] equilibrium and introducing artificial mass and damping effects. 
+Starting from an arbitrary initial configuration, the shape of equilibrium is achieved by a transient analysis. The drawback of this method is to choose appropriate mass and damping coefficients in order to stabilize the governing equation. Therefore, a high level of experience is needed for the robust application of the method. Nonetheless, the dynamic relaxation is successfully used for the form finding of a large number of structures.
+
+
 - **"Cutting Pattern Generation".**
 
 It consists of cutting the membrane structure into different parts in an optimized manner, such that they can be developed more easily into a flat surface.
@@ -108,7 +112,8 @@ Although interesting, this approach is surface-specific and a general method wou
 
 More detailed research and insights can be found in the following dissertations:
 
-- "Numerisch-mechanische Betrachtung des Entwurfsprozesses von Membrantragwerken" (Johannes Linhard)
-- "Numerical Methods for the Design and Analysis of Tensile Structures" (Falko H. Dieringer)
-- "Variation of Reference Strategy Generation of Optimized Cutting Patterns for Textile Fabrics" (Armin M. Widhammer)
+- J. Linhard. “Numerisch-mechanische Betrachtung des Entwurfsprozesses von Membrantragwerken.” PhD thesis. München, Techn. Univ., Diss., 2009, 2009.
+- F. Dieringer et al. “Numerical Methods for the Design and Analysis of Tensile Structures.” In: International Journal of Space Structures 3&4.28 (2013), pp. 149–160.
+- A. M. Widhammer. “Variation of Reference Strategy Generation of Optimized Cutting Patterns for Textile Fabrics.”
+- M. R. Barnes. “Dynamic relaxation analysis of tension networks.” In: Proceedings of the International Conference on Tension Roof Structures. London, 1974.
  
