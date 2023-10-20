@@ -81,14 +81,23 @@ Several techniques are available to allow a 2D representation of a membrane stru
 
 - **Projection on a cylinder or sphere.**
 
-- **Relaxation in the plane.**
+In terms of complexity, this is probably the simplest approach. 
+
+Being relatively easy to implement, this method could be used as a first approach, but it might not work equally well on all surfaces. The methods presented below involve "adjusting" the geometry and might be more appropriate for an accurate representation. 
+
+- **Dynamic Relaxation Method.**
+
 This technique is based on the fact that membrane structures are typically pre-stressed in order to achieve structural stiffness and stability.
 This involves applying tension to the membrane material, such as fabric or other flexible materials, before it is installed in the structure.
 Combined with a biaxial curvature, efficient structures in terms of load distribution can be achieved.
 
+Following this reasoning, Dynamic Relaxation (DR) is an explicit iterative method for obtaining the steady state solution. Because of its explicit nature there is no need for solving large systems of equations. All quantities can be treated as vectors, reducing the implementation complexity and the memory requirements. Although the number of iterations to obtain convergence may be quite large, the computation cost for each iteration is very low, making it a very efficient solution method.
+
 - **"Cutting Pattern Generation".**
+
 It consists of cutting the membrane structure into different parts in an optimized manner, such that they can be developed more easily into a flat surface.
 Unlike the methods presented above, this technique has already been implemented in the Carat++ repository, which contains two modules which perform this procedure: `AnalysisCuttingPattern.cpp` and `Analysis_CutPart_VaReS.cpp`.
+
 Although interesting, this approach is surface-specific and a general method would be harder to implement.
 
 ![Cutting Pattern Generation](CuttingPatternGeneration3.jpg)
